@@ -1,8 +1,8 @@
 {
-	"name": "DS_SOURCE",
+	"name": "DS_TEST",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "LS_movies",
+			"referenceName": "AzureDataLakeStorage4",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
@@ -10,7 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "csvfolder",
+				"fileName": "movies.csv",
+				"folderPath": "NEW_FOLDER",
 				"fileSystem": "input"
 			},
 			"columnDelimiter": ",",
@@ -32,6 +33,5 @@
 				"type": "String"
 			}
 		]
-	},
-	"type": "Microsoft.DataFactory/factories/datasets"
+	}
 }
