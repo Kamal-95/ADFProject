@@ -1,0 +1,23 @@
+{
+	"name": "DS_SINKKAMAL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SINKKAMAL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "newkamalfolder",
+				"fileSystem": "output"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
